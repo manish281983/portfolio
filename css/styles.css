@@ -547,6 +547,13 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 575px) {
+  .technology {
+    padding-right: 0 !important ;
+    font-size: 10pt !important;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -10036,6 +10043,28 @@ p.lead {
   font-size: 1.5rem;
 }
 
+.tags {
+  margin: 10px 0;
+}
+
+.tags .badge{
+  background: #bd5d38;
+  font-size: 12px;
+  color: white;
+  padding: 5px;
+  font-weight: normal;
+}
+
+.demoLink{
+  text-align: right;
+  text-decoration: underline;
+  color: #bd5d38;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -10209,14 +10238,61 @@ section .technology .fill {
 }
 
 
-.gallery-container
-{
+.gallery-container{
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     cursor: pointer;
     position: relative;
-    min-height: 365px;
-    padding: 10px;
-
-    
+    min-height: 400px;
+    padding: 10px;   
 }
 
+
+.experience nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+
+}
+.experience nav > div a.nav-item.nav-link,
+.experience nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
+
+.experience nav > div a.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #bd5d38 ;
+}
+.experience .tab-content{
+  background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #bd5d38;
+    border-bottom:5px solid #bd5d38;
+    padding:30px 25px;
+}
+
+.experience nav > div a.nav-item.nav-link:hover,
+.experience nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: #bd5d38;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+.experience .tab-pane {
+  padding: 10px;
+}
