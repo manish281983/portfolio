@@ -485,7 +485,6 @@ mark,
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
-  height: auto;
 }
 
 .figure {
@@ -10134,6 +10133,10 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem;
+}
+
+section.resume-section .badges{
+margin-top: 20px;
 }
 
 section.resume-section {
